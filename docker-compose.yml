@@ -7,19 +7,19 @@ services:
     deploy:
       replicas: 3
   train:
-    image:  kavurinaveen/train:v1
+    image: kavurinaveen/train:v1
     ports:
       - 72:80
     deploy:
       replicas: 3
   recharge:
-    image:  kavurinaveen/dth:v1
+    image: kavurinaveen/dth:v1
     ports:
       - 73:80
     deploy:
       replicas: 3
   dth:
-    image:  kavurinaveen/recharge:v1
+    image: kavurinaveen/recharge:v1
     ports:
       - 74:80
     deploy:
