@@ -1,27 +1,26 @@
----
 version: "3.8"
 services:
   movies:
-    image: kavurinaveen/movies:v1
+    image: kavurinaveen/movies:latest
     ports:
-      - 81:80
+      - 71:80
     deploy:
       replicas: 3
   train:
-    image: kavurinaveen/train:v1
+    image:  kavurinaveen/train:latest
     ports:
-      - 82:80
+      - 72:80
     deploy:
       replicas: 3
   recharge:
-    image: kavurinaveen/dth:v1
+    image:  kavurinaveen/dth:latest
     ports:
-      - 83:80
+      - 73:80
     deploy:
       replicas: 3
   dth:
-    image: kavurinaveen/recharge:v1
+    image:  kavurinaveen/recharge:latest
     ports:
-      - 84:80
+      - 74:80
     deploy:
       replicas: 3
