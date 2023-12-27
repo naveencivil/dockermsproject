@@ -14,13 +14,13 @@ services:
     deploy:
       replicas: 3
   recharge:
-    image: kavurinaveen/recharge:v1
+    image: kavurinaveen/dth:v1
     ports:
       - 83:80
     deploy:
       replicas: 3
   dth:
-    image:kavurinaveen/dth:v1
+    image:kavurinaveen/recharge:v1
     ports:
       - 84:80
     deploy:
