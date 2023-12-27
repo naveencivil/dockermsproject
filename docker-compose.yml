@@ -2,25 +2,25 @@
 version: "3.8"
 services:
   movies:
-    image: rahamshaik/moviespayy:latest
+    image: kavurinaveen/movies:v1
     ports:
       - 81:80
     deploy:
       replicas: 3
   train:
-    image: rahamshaik/trainpayy:latest
+    image: kavurinaveen/train:v1
     ports:
       - 82:80
     deploy:
       replicas: 3
   recharge:
-    image: rahamshaik/rechargepayy:latest
+    image: kavurinaveen/recharge:v1
     ports:
       - 83:80
     deploy:
       replicas: 3
   dth:
-    image: rahamshaik/dthpayy:latest
+    image:kavurinaveen/dth:v1
     ports:
       - 84:80
     deploy:
